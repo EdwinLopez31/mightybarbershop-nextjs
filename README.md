@@ -1,3 +1,3 @@
-##Mty Barbershop Mock Website
+#Mty Barbershop Mock Website
 
 Made with NextJS
