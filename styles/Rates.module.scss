@@ -1,0 +1,60 @@
+.ratesSection {
+	@apply min-h-screen mt-10  grid grid-cols-1  gap-y-16  justify-center xl:grid-cols-3 container mx-auto;
+}
+
+.flipCard {
+	perspective: 120rem;
+
+	@apply w-[18rem] h-[32rem] mx-auto;
+
+	& .flipCardInner {
+		transform-style: preserve-3d;
+		box-shadow: 0 5px 8px rgba(black, 0.6);
+		@apply relative w-full h-full text-center transition-transform duration-700;
+
+		& .flipCardFront,
+		& .flipCardBack {
+			backface-visibility: hidden;
+			@apply absolute w-full h-full overflow-hidden;
+		}
+
+		& .flipCardFront {
+			backface-visibility: hidden;
+			@apply z-0;
+		}
+
+		& .flipCardBack {
+			transform: rotateY(180deg);
+			@apply z-20 text-white text-4xl tracking-wide justify-center items-center flex;
+		}
+	}
+
+	&:hover .flipCardInner {
+		transform: rotateY(180deg);
+	}
+}
+
+.image {
+	background-blend-mode: screen;
+	background-size: cover;
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+	@apply relative w-full h-44;
+
+	&1 {
+		
+		background-image: url('/rates_haircut.jpg'),
+		linear-gradient(to right bottom, #433323, #a37a4b);
+	}
+
+	&2 {
+		background-image: url('/rates_shave.jpg'),
+			linear-gradient(to right bottom, #2d5286, #1d3557);
+
+	}
+
+	&3 {
+		background-image: url('/rates_package.jpg'),
+			linear-gradient(to right bottom, #1b7752, #3ead81);
+
+	}
+}

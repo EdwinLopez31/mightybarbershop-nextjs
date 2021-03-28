@@ -1,0 +1,10 @@
+@import './_variables.scss';
+
+.headerSection{
+  background-image: linear-gradient(to top left, rgba($darkBrown,.5), rgba($lightBrown,.5)), url('../assets/bg_header.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  @apply min-h-screen flex flex-col items-center justify-center px-4;
+}

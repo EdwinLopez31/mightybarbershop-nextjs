@@ -1,0 +1,8 @@
+@import './variables.scss';
+
+.testimoniesSection{
+  background-image: linear-gradient(to top left, rgba($darkBrown,.5), rgba($lightBrown,.5)), url('../assets/bg_testimonials.jpg');
+  clip-path: polygon(0 15%, 0 100%, 100% 100%, 100% 0);
+  @apply px-4 min-h-screen bg-fixed grid grid-cols-1 justify-center items-center bg-no-repeat bg-top  bg-cover;
+}
+

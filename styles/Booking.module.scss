@@ -1,0 +1,64 @@
+.bookingSection {
+	background-image: linear-gradient(to bottom right, #4333238f, #a37a4b8f),
+		url('../assets/bg_booking_section.jpg');
+	@apply min-h-screen bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center;
+}
+
+.formContainer {
+	background-image: url('../assets/bg_booking_form.jpg');
+	@apply grid w-11/12 h-[35rem] bg-cover bg-no-repeat bg-center relative  container mx-auto;
+
+	&Bg {
+		@apply absolute h-full w-full transition-all duration-300 bg-[#f3f3f3] bg-opacity-70 md:bg-opacity-90;
+
+		@media screen and (min-width: 768px) {
+			clip-path: polygon(0 0, 70% 0, 60% 100%, 0 100%);
+		}
+	}
+}
+
+.circleScaleBtn {
+	padding: 12px 24px;
+	background-color: #4333231c;
+	border-bottom: 4px solid #433323;
+	color: #666;
+	position: relative;
+	border-radius: 6px;
+	overflow: hidden;
+	z-index: 1;
+
+	& span {
+		z-index: 1;
+		position: relative;
+	}
+
+	&:before {
+		content: 'Submit';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+		transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1),
+			transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+		background-color: white;
+		opacity: 0;
+
+		@media screen and (min-width: 768px) {
+			width: 330px;
+			height: 330px;
+		}
+	}
+
+	&:hover span {
+		color: #433323;
+	}
+
+	&:hover::before {
+		opacity: 1;
+		transition-duration: 0.85s;
+		transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+	}
+}
