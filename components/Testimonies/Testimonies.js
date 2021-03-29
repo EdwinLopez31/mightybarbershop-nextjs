@@ -4,7 +4,7 @@ import SectionTitle from '../SectionTitle'
 
 const Testimonies = () => {
 	return (
-		<div className={styles.testimoniesSection}>
+		<div className={styles.testimoniesSection} id="testimonies">
 		<div className="mt-28">
 			<SectionTitle className="text-white">Only the mightiest haircut</SectionTitle>
 </div>

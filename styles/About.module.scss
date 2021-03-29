@@ -1,3 +1,8 @@
-.aboutSection{
-  @apply px-4 container mx-auto;
+.aboutSection {
+	@apply px-4 container mx-auto;
+}
+
+.aboutImages {
+  box-shadow: 0 3px 6px rgba(black, 0.6);
+	@apply mx-auto relative md:absolute transform duration-300 border-2 border-white md:hover:z-40 md:hover:-translate-y-1 md:hover:scale-110 md:hover:border-yellow-900 w-[200px] lg:w-[250px] lg:h-[190px] xl:w-[370px] xl:h-[280px]  h-[140px];
 }

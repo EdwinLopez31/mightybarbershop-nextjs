@@ -3,7 +3,7 @@ import Logo from '../Logo/Logo'
 const Layout = props => {
 	return (
 		<div className="mx-auto">
-			<nav className="fixed inset-x-0 z-50 w-full mx-auto bg-black bg-opacity-20 md:bg-transparent ">
+			<nav className="fixed inset-x-0 z-50 w-full mx-auto bg-[#1e1e1e] bg-opacity-20 md:bg-transparent ">
 				<Navbar />
 			</nav>
 			<main>{props.children}</main>

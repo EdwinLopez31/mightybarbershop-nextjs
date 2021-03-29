@@ -6,13 +6,13 @@
 
 .formContainer {
 	background-image: url('../assets/bg_booking_form.jpg');
-	@apply grid w-11/12 h-[35rem] bg-cover bg-no-repeat bg-center relative  container mx-auto;
+	@apply grid w-11/12 xl:w-4/6 h-[35rem] bg-cover bg-no-repeat bg-center relative  container mx-auto;
 
 	&Bg {
 		@apply absolute h-full w-full transition-all duration-300 bg-[#f3f3f3] bg-opacity-70 md:bg-opacity-90;
 
 		@media screen and (min-width: 768px) {
-			clip-path: polygon(0 0, 70% 0, 60% 100%, 0 100%);
+			clip-path: polygon(0 0, 70% 0, 55% 100%, 0 100%);
 		}
 	}
 }

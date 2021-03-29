@@ -19,7 +19,7 @@ const Rates = () => {
 	]
 
 	return (
-		<div className={styles.ratesSection}>
+		<div className={styles.ratesSection} id="rates">
 
 			<div className="xl:col-span-3 ">
 				<SectionTitle className="text-transparent">Rates</SectionTitle>
@@ -31,9 +31,9 @@ const Rates = () => {
 				cardTitle="Neat Haircut"
 				packagePrice="₱250"
 			>
-				{inclusionsHaircut.map(inclusion => (
+				{inclusionsHaircut.map((inclusion, index) => (
 					<p
-						key={inclusion.id}
+						key={index}
 						className="p-4 border-b-[0.03rem] w-2/3 border-gray-100"
 					>
 						{inclusion}
@@ -47,9 +47,9 @@ const Rates = () => {
 				cardTitle="Goatee Artistry"
 				packagePrice="₱450"
 			>
-				{inclusionsGoateeArtistry.map(inclusion => (
+				{inclusionsGoateeArtistry.map((inclusion, index) => (
 					<p
-						key={inclusion.id}
+						key={index}
 						className="p-4 border-b-[0.03rem] w-2/3 border-gray-100"
 					>
 						{inclusion}
@@ -63,9 +63,9 @@ const Rates = () => {
 				cardTitle="Classic Man"
 				packagePrice="₱600"
 			>
-				{inclusionsClassicMan.map(inclusion => (
+				{inclusionsClassicMan.map((inclusion, index) => (
 					<p
-						key={inclusion.id}
+						key={index}
 						className="p-4 border-b-[0.03rem] w-2/3 border-gray-100"
 					>
 						{inclusion}

@@ -2,11 +2,18 @@ import styles from '../../styles/Booking.module.scss'
 import SectionTitle from '../SectionTitle'
 
 const Booking = () => {
+
+	let options = {
+		haircuts: ['Regular Haircut', 'Neat Haircut', 'Haircut Artistry', 'Haircut & Rinse'],
+		shaves: ['Regular Shave', 'Goatee Artistry', 'Head Shave'],
+		packageDeals: ['Classic Man', 'Easy Slick', 'Al-mighty Shave', 'Twins of Twins', 'Service Dessert', 'Do & Dye', '1,2 Combo']
+	}
+
 	return (
-		<div className={styles.bookingSection}>
+		<div className={styles.bookingSection} id="booking">
 			<div className={styles.formContainer}>
 				<div className={styles.formContainerBg}>
-				<div className="mx-auto mt-8 md:absolute left-8 xl:left-10">
+				<div className="mx-auto mt-8 md:absolute left-8">
 					<SectionTitle className="text-transparent">
 						Make your reservation today!
 					</SectionTitle>
@@ -26,32 +33,26 @@ const Booking = () => {
 							type="email"
 						/>
 						<select
-							className="w-11/12 border-b-4 border-transparent p-2 mx-auto rounded-md focus:outline-none  focus:border-solid focus:border-[#3ead81]"
+							className="w-11/12 border-b-4 border-transparent p-2 mx-auto rounded-md focus:outline-none focus:border-solid focus:border-[#3ead81]"
 							name=""
 							id=""
+							defaultValue={"default"}
 						>
-							<option disabled hidden selected>
+							<option disabled hidden value="default">
 								Choose a service
 							</option>
 							<optgroup label="Haircut">
-								<option value="Regular Haircut">Regular Haircut</option>
-								<option value="Neat Haircut">Neat Haircut</option>
-								<option value="Haircut Artistry">Haircut Artistry</option>
-								<option value="Haircut and Rinse">Haircut & Rinse</option>
+								{options.haircuts.map((haircut, index) => (
+									<option key={haircut.index} value={haircut}>{haircut}</option>
+								))}
 							</optgroup>
 							<optgroup label="Shave">
-								<option value="Regular Shave">Regular Shave</option>
-								<option value="Goatee Artistry">Goatee Artistry</option>
-								<option value="Head Shave">Head Shave</option>
+								{options.shaves.map((shave, index) => 
+								<option key={shave.index} value={shave}>{shave}</option>)}
 							</optgroup>
 							<optgroup label="Package Deal">
-								<option value="Classic Man">Classic Man</option>
-								<option value="Easy Slick">Easy Slick</option>
-								<option value="Al-Mighty Shave">Al-Mighty Shave</option>
-								<option value="Twins of Twins">Twins of Twins</option>
-								<option value="Service Dessert">Service Dessert</option>
-								<option value="Do and Dye">Do & Dye</option>
-								<option value="1,2 Combo">1,2 Combo</option>
+								{options.packageDeals.map((packageDeal, index) =>
+								<option key={packageDeal.index} value={packageDeal}>{packageDeal}</option>)}
 							</optgroup>
 						</select>
 
