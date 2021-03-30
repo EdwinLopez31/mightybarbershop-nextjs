@@ -1,3 +1,3 @@
-#Mty Barbershop Mock Website
+# A mock website design for a famous barbershop in Antipolo
 
 Made with NextJS
