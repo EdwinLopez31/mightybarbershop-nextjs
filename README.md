@@ -1,3 +1,3 @@
-# A Mock Website Design for a famous barbershop in Antipolo
+# A mock website design for a famous barbershop in Antipolo
 
 Made with NextJS
