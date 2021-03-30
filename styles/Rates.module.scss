@@ -1,5 +1,5 @@
 .ratesSection {
-	@apply min-h-screen mt-10  grid grid-cols-1  gap-y-16  justify-center xl:grid-cols-3 container mx-auto;
+	@apply min-h-screen grid grid-cols-1  gap-y-16  justify-center xl:grid-cols-3 container mx-auto;
 }
 
 .flipCard {
@@ -9,7 +9,7 @@
 
 	& .flipCardInner {
 		transform-style: preserve-3d;
-		box-shadow: 0 5px 8px rgba(black, 0.6);
+		box-shadow: 0 4px 10px rgba(rgb(56, 56, 56), 0.6);
 		@apply relative w-full h-full text-center transition-transform duration-700;
 
 		& .flipCardFront,
@@ -48,13 +48,13 @@
 
 	&2 {
 		background-image: url('/rates_shave.jpg'),
-			linear-gradient(to right bottom, #2d5286, #1d3557);
+			linear-gradient(to right bottom, #1d3557, #2d5286);
 
 	}
 
 	&3 {
 		background-image: url('/rates_package.jpg'),
-			linear-gradient(to right bottom, #1b7752, #3ead81);
+			linear-gradient(to right bottom, #1b7752, #3ba179);
 
 	}
 }

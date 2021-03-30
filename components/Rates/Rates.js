@@ -21,7 +21,7 @@ const Rates = () => {
 	return (
 		<div className={styles.ratesSection} id="rates">
 
-			<div className="xl:col-span-3 ">
+			<div className="mt-10 xl:col-span-3 ">
 				<SectionTitle className="text-transparent">Rates</SectionTitle>
 			</div>
 
@@ -59,7 +59,7 @@ const Rates = () => {
 
 			<RatesCard
 				img={`${styles.image3} ${styles.image}`}
-				className="bg-gradient-to-br text-white opacity-75 from-[#1b7752] to-[#3ead81] "
+				className="bg-gradient-to-br text-white opacity-75 from-[#318a66] to-[#1b7752] "
 				cardTitle="Classic Man"
 				packagePrice="₱600"
 			>

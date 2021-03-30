@@ -1,9 +1,26 @@
 import Navbar from '../Navbar/Navbar'
-import Logo from '../Logo/Logo'
+
+import { useEffect, useState } from 'react'
 const Layout = props => {
+	const [showNav, setShowNav] = useState(false)
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll)
+	}, [])
+
+	const handleScroll = () => {
+		if (window.scrollY >= 70) {
+			setShowNav(true)
+		}else{
+			setShowNav(false)
+		}
+		console.log(window.scrollY)
+		console.log(showNav)
+	}
+
 	return (
-		<div className="mx-auto">
-			<nav className="fixed inset-x-0 z-50 w-full mx-auto bg-[#1e1e1e] bg-opacity-20 md:bg-transparent ">
+		<div className={`mx-auto ${showNav === true ? '' : null}`}>
+			<nav className={`fixed top-0 inset-x-0 z-50  mx-auto bg-[#594929] transition bg-opacity-70 ${showNav === true ? 'md:bg-opacity-70 md:bg-[#594929]' : 'md:bg-transparent' } `}>
 				<Navbar />
 			</nav>
 			<main>{props.children}</main>
@@ -12,6 +29,5 @@ const Layout = props => {
 	)
 }
 export default Layout
-{
-	//<Logo className="absolute w-20 h-20 top-5" />
-}
+
+

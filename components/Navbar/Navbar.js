@@ -13,49 +13,54 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className="z-50 px-4 py-4 mx-auto max-w-screen-2xl ">
-				<div className="flex items-center justify-end overflow-hidden md:justify-between">
-					<div className="absolute inset-y-0 left-0 md:relative">
+			<div className="z-50 px-4 py-4 mx-auto max-w-screen-2xl md:px-2 md:py-2 ">
+				<div className="flex items-center justify-end overflow-hidden md:justify-center">
+					<div className="absolute inset-y-0 left-0 md:hidden">
 						<Logo className="w-12 h-12 mt-2 md:w-24 md:h-24" />
 					</div>
-					<div className="hidden text-white gap-x-5 md:flex">
+					<div className="hidden text-white gap-x-5 md:flex ">
 						<Link
 							to="about"
 							activeClass="border-white"
-							className="px-4 py-3 border-b-2 border-transparent cursor-pointer hover:border-white"
+							offset={-150}
+							className="px-4 py-3 transition duration-300 border-b-2 border-transparent cursor-pointer hover:border-white md:px-5"
 							smooth={true}
 							spy={true}
 							duration={500}
+							offset={-65}
 						>
 							About
 						</Link>
 						<Link
 							to="testimonies"
 							activeClass="border-white"
-							className="px-4 py-3 border-b-2 border-transparent cursor-pointer hover:border-white"
+							className="px-4 py-3 transition duration-300 border-b-2 border-transparent cursor-pointer hover:border-white md:px-5"
 							smooth={true}
 							spy={true}
 							duration={500}
+							offset={-65}
 						>
 							Testimonies
 						</Link>
 						<Link
 							to="rates"
 							activeClass="border-white"
-							className="px-4 py-3 border-b-2 border-transparent cursor-pointer hover:border-white"
+							className="px-4 py-3 transition duration-300 border-b-2 border-transparent cursor-pointer hover:border-white md:px-5"
 							smooth={true}
 							spy={true}
 							duration={500}
+							offset={-65}
 						>
 							Rates
 						</Link>
 						<Link
 							to="booking"
 							activeClass="border-white"
-							className="px-4 py-3 border-b-2 border-transparent cursor-pointer hover:border-white"
+							className="px-4 py-3 transition duration-300 border-b-2 border-transparent cursor-pointer hover:border-white md:px-5"
 							smooth={true}
 							spy={true}
 							duration={500}
+							offset={-65}
 						>
 							Booking
 						</Link>
@@ -101,37 +106,45 @@ const Navbar = () => {
 				>
 					<Link
 						to="about"
-						className="flex justify-center w-full px-4 py-2 cursor-pointer"
+						className="flex justify-center w-full px-4 py-2 cursor-pointer bg-[#594929] bg-opacity-0 hover:bg-opacity-70"
 						smooth={true}
 						spy={true}
 						duration={500}
+						offset={-60}
+						onClick={handleClick}
 					>
 						About
 					</Link>
 					<Link
 						to="testimonies"
-						className="flex justify-center w-full px-4 py-2 cursor-pointer "
+						className="flex justify-center w-full px-4 py-2 cursor-pointer bg-[#594929] bg-opacity-0 hover:bg-opacity-70"
 						smooth={true}
 						spy={true}
 						duration={500}
+						offset={-60}
+						onClick={handleClick}
 					>
 						Testimonies
 					</Link>
 					<Link
 						to="rates"
-						className="flex justify-center w-full px-4 py-2 cursor-pointer "
+						className="flex justify-center w-full px-4 py-2 cursor-pointer bg-[#594929] bg-opacity-0 hover:bg-opacity-70"
 						smooth={true}
 						spy={true}
 						duration={500}
+						offset={-60}
+						onClick={handleClick}
 					>
 						Rates
 					</Link>
 					<Link
 						to="booking"
-						className="flex justify-center w-full px-4 py-2 cursor-pointer "
+						className="flex justify-center w-full px-4 py-2 cursor-pointer bg-[#594929] bg-opacity-0 hover:bg-opacity-70"
 						smooth={true}
 						spy={true}
 						duration={500}
+						offset={-60}
+						onClick={handleClick}
 					>
 						Booking
 					</Link>
