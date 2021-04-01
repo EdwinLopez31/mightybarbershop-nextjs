@@ -93,7 +93,7 @@ const Booking = () => {
 								))}
 							</optgroup>
 						</select>
-						<label className={`${styles.inputLabel} `} htmlFor="service">Choose a service</label>
+						<label className={`${styles.inputLabel}`} htmlFor="service">Choose a service</label>
 						</div>
 
 						<button

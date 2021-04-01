@@ -1,4 +1,5 @@
 import Navbar from '../Navbar/Navbar'
+import Head from 'next/head'
 
 import { useEffect, useState } from 'react'
 const Layout = props => {
@@ -11,7 +12,7 @@ const Layout = props => {
 	const handleScroll = () => {
 		if (window.scrollY >= 70) {
 			setShowNav(true)
-		}else{
+		} else {
 			setShowNav(false)
 		}
 		console.log(window.scrollY)
@@ -20,7 +21,16 @@ const Layout = props => {
 
 	return (
 		<div className={`mx-auto ${showNav === true ? '' : null}`}>
-			<nav className={`fixed top-0 inset-x-0 z-50  mx-auto bg-[#594929] transition bg-opacity-70 ${showNav === true ? 'md:bg-opacity-70 md:bg-[#594929]' : 'md:bg-transparent' } `}>
+			<Head>
+				<title>Mighty Barbershop</title>
+			</Head>
+			<nav
+				className={`fixed top-0 inset-x-0 z-50  mx-auto bg-[#594929] transition bg-opacity-70 ${
+					showNav === true
+						? 'md:bg-opacity-70 md:bg-[#594929]'
+						: 'md:bg-transparent'
+				} `}
+			>
 				<Navbar />
 			</nav>
 			<main>{props.children}</main>
@@ -29,5 +39,3 @@ const Layout = props => {
 	)
 }
 export default Layout
-
-
