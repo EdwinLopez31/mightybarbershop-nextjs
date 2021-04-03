@@ -1,5 +1,6 @@
 import styles from '../../styles/Booking.module.scss'
 import SectionTitle from '../SectionTitle'
+import CustomInput from '../CustomInput/CustomInput'
 
 const Booking = () => {
 
@@ -39,28 +40,8 @@ const Booking = () => {
 						className="flex flex-col justify-center w-full h-full p-4 -mt-12 md:mt-4 gap-y-10 md:max-w-xl md:w-1/2 "
 						action=""
 					>
-						<div className={`${styles.divFormField}`}>
-							<input
-								required
-								className={`${styles.inputField} `}
-								type="text"
-								name="name"
-								id="name"
-								placeholder="Name"
-							/>
-							<label className={`${styles.inputLabel} `} htmlFor="name">Name</label>
-						</div>
-						<div className={`${styles.divFormField}`}>
-							<input
-								required
-								className={`${styles.inputField} `}
-								type="email"
-								name="email"
-								id="email"
-								placeholder="Email"
-							/>
-							<label className={`${styles.inputLabel} `} htmlFor="email">Email</label>
-						</div>
+						<CustomInput required type="text" name="name" id="name" placeholder="Name" />
+						<CustomInput required type="email" name="email" id="email" placeholder="Email" />
 						<div className={`${styles.divFormField}`}>
 						<select
 							className={`${styles.selectService}`}

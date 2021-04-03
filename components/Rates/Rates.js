@@ -34,7 +34,7 @@ const Rates = () => {
 				{inclusionsHaircut.map((inclusion, index) => (
 					<p
 						key={index}
-						className="p-4 border-b-[0.03rem] w-2/3 border-gray-100"
+						className={`p-4  w-2/3  ${index + 1 !== inclusionsHaircut.length ? 'border-b-[0.03rem] border-gray-100' : '' }`}
 					>
 						{inclusion}
 					</p>
@@ -50,7 +50,7 @@ const Rates = () => {
 				{inclusionsGoateeArtistry.map((inclusion, index) => (
 					<p
 						key={index}
-						className="p-4 border-b-[0.03rem] w-2/3 border-gray-100"
+						className={`p-4  w-2/3  ${index + 1 !== inclusionsGoateeArtistry.length ? 'border-b-[0.03rem] border-gray-100' : '' }`}
 					>
 						{inclusion}
 					</p>
@@ -66,7 +66,7 @@ const Rates = () => {
 				{inclusionsClassicMan.map((inclusion, index) => (
 					<p
 						key={index}
-						className="p-4 border-b-[0.03rem] w-2/3 border-gray-100"
+						className={`p-4  w-2/3  ${index + 1 !== inclusionsClassicMan.length ? 'border-b-[0.03rem] border-gray-100' : '' }`}
 					>
 						{inclusion}
 					</p>
@@ -74,7 +74,7 @@ const Rates = () => {
 			</RatesCard>
 
 			<div className="mx-auto mb-10 xl:col-span-3">
-				<button className="px-4 py-2 transform shadow rounded-3xl transition-all duration-300  bg-[#433323] text-white hover:shadow-md hover:-translate-y-1 focus:outline-none">
+				<button className="px-4 py-2 transform rounded-3xl transition duration-300  bg-[#433323] text-white hover:-translate-y-0.5 focus:outline-none">
 					View Complete Pricelist
 				</button>
 			</div>

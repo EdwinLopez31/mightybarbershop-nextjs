@@ -4,7 +4,6 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 
 const Navbar = () => {
 	const [isVisible, setIsVisible] = useState(false)
-	const [slideIn, setIsSlideIn] = useState('-translate-y-full')
 
 	const handleClick = () => {
 		console.log(isVisible)
@@ -22,12 +21,11 @@ const Navbar = () => {
 						<Link
 							to="about"
 							activeClass="border-white"
-							offset={-150}
 							className="px-4 py-3 transition duration-300 border-b-2 border-transparent cursor-pointer hover:border-white md:px-5"
 							smooth={true}
 							spy={true}
 							duration={500}
-							offset={-65}
+							offset={-220}
 						>
 							About
 						</Link>
@@ -38,7 +36,7 @@ const Navbar = () => {
 							smooth={true}
 							spy={true}
 							duration={500}
-							offset={-65}
+							offset={0}
 						>
 							Testimonies
 						</Link>

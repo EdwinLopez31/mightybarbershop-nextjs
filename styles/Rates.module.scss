@@ -2,37 +2,7 @@
 	@apply min-h-screen grid grid-cols-1  gap-y-16  justify-center xl:grid-cols-3 container mx-auto;
 }
 
-.flipCard {
-	perspective: 120rem;
 
-	@apply w-[18rem] h-[32rem] mx-auto;
-
-	& .flipCardInner {
-		transform-style: preserve-3d;
-		box-shadow: 0 4px 10px rgba(rgb(56, 56, 56), 0.6);
-		@apply relative w-full h-full text-center transition-transform duration-700;
-
-		& .flipCardFront,
-		& .flipCardBack {
-			backface-visibility: hidden;
-			@apply absolute w-full h-full overflow-hidden;
-		}
-
-		& .flipCardFront {
-			backface-visibility: hidden;
-			@apply z-0;
-		}
-
-		& .flipCardBack {
-			transform: rotateY(180deg);
-			@apply z-20 text-white text-4xl tracking-wide justify-center items-center flex;
-		}
-	}
-
-	&:hover .flipCardInner {
-		transform: rotateY(180deg);
-	}
-}
 
 .image {
 	background-blend-mode: screen;

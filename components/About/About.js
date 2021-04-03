@@ -9,7 +9,7 @@ const About = () => {
 				For all kinds of gentlemen
 			</SectionTitle>
 
-			<div className="grid items-center justify-center h-full grid-cols-1 mx-12 md:mx-6 xl:mt-20 lg:gap-x-24 md:grid-cols-2">
+			<div className="grid items-center justify-center h-full grid-cols-1 mx-12 mt-16 md:mx-6 xl:mt-20 lg:gap-x-24 md:grid-cols-2">
 				<div className="relative grid w-full h-full grid-cols-1 mb-10 xl:-mt-28 gap-y-5 md:order-2">
 					<div className={`z-10 md:top-20 md:left-8 ${styles.aboutImages}`}>
 						<Image
