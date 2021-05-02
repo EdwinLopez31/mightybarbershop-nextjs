@@ -6,10 +6,7 @@ const CustomInput = props => {
 			<input
 				{...props}
 				className={`${styles.inputField}`}
-				type={props.email}
-				name={props.name}
-				id={props.id}
-				placeholder={props.placeholder}
+
 			/>
 			<label className={`${styles.inputLabel} `} htmlFor={props.name}>
 				{props.placeholder}

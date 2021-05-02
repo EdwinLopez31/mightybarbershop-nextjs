@@ -28,7 +28,7 @@ const Layout = props => {
 				<title>Mighty Barbershop</title>
 			</Head>
 			<nav
-				className={`fixed top-0 inset-x-0 z-50  mx-auto bg-[#594929] transition bg-opacity-70 ${
+				className={`fixed top-0 inset-x-0 z-50  mx-auto bg-[#594929] transition duration-300 bg-opacity-70 ${
 					showNav === true
 						? 'md:bg-opacity-70 md:bg-[#594929]'
 						: 'md:bg-transparent'
