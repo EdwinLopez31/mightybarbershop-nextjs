@@ -4,7 +4,6 @@ import Image from 'next/image'
 //This Flipcard has an image on top and a label absolutely positioned on the bottom side of the image.
 
 const RatesCard = props => {
-	console.log(props.img)
 	return (
 		<div className={styles.flipCard}>
 			<div className={styles.flipCardInner}>

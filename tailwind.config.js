@@ -6,6 +6,13 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': 'Lato, sans-serif',
+      },
+      colors: {
+        invalidRed: '#ad3e3e',
+        jetBlack: '#1e1e1e',
+        aquaGreen: '#3ead81',
+        lightGray: '#f2f2f2',
+        mediumLightGray: '#f3f3f3'
       }
     },
   },

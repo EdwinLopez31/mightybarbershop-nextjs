@@ -1,7 +1,23 @@
 
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
-@tailwind utilities;
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #a7997e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #594929;
+}
+

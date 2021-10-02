@@ -11,7 +11,7 @@ const About = () => {
 
 			<div className="grid items-center justify-center h-full grid-cols-1 mx-12 mt-16 md:mx-6 xl:mt-20 lg:gap-x-24 md:grid-cols-2">
 				<div className="relative grid w-full h-full grid-cols-1 mb-10 xl:-mt-28 gap-y-5 md:order-2">
-					<div className={`z-10 md:top-20 md:left-8 ${styles.aboutImages}`}>
+					<div className={`z-10 md:top-20 md:left-8 w-[200px] lg:w-[250px] lg:h-[190px] xl:w-[370px] xl:h-[280px]  h-[140px] ${styles.aboutImages}`}>
 						<Image
 							src="/haircut_adult.png"
 							layout="fill"
@@ -19,14 +19,14 @@ const About = () => {
 						/>
 					</div>
 
-					<div className={`xl:left-48 md:top-12 z-20 md:left-36 ${styles.aboutImages}`}>
+					<div className={`xl:left-48 md:top-12 z-20 md:left-36 w-[200px] lg:w-[250px] lg:h-[190px] xl:w-[370px] xl:h-[280px]  h-[140px] ${styles.aboutImages}`}>
 						<Image
 							src="/haircut_teen.png"
 							layout="fill"
 							className="absolute"
 						/>
 					</div>
-					<div className={`z-30 md:top-28 md:left-28 ${styles.aboutImages}`}>
+					<div className={`z-30 md:top-28 md:left-28 w-[200px] lg:w-[250px] lg:h-[190px] xl:w-[370px] xl:h-[280px]  h-[140px] ${styles.aboutImages}`}>
 						<Image
 							src="/haircut_child.png"
 							layout="fill"

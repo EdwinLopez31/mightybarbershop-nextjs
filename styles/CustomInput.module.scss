@@ -1,17 +1,17 @@
 .inputContainer {
-	@apply relative flex items-center w-11/12 mx-auto;
+  @apply relative flex items-center w-11/12 mx-auto;
 
-	.inputField {
-		@apply block w-full p-2 border-b-4 border-transparent rounded-md focus:outline-none focus:invalid:outline-none focus:border-solid focus:border-[#3ead81] focus:invalid:border-[#ad3e3e];
+  .inputField {
+    @apply block w-full p-2 border-b-4 border-transparent rounded-md focus:outline-none invalid:focus:outline-none focus:border-solid focus:border-aquaGreen invalid:focus:border-invalidRed;
 
-		&:placeholder-shown {
-			& + .inputLabel {
-				@apply absolute opacity-0 cursor-text origin-left text-sm transform left-2 duration-300;
-			}
-		}
-	}
+    &:placeholder-shown {
+      & + .inputLabel {
+        @apply absolute opacity-0 cursor-text origin-left text-sm transform left-2 duration-300;
+      }
+    }
+  }
 
-	.inputLabel{
-		@apply absolute origin-left transform left-2 duration-300 scale-[.9] -translate-y-10 text-[#1e1e1e];
-	}
+  .inputLabel {
+    @apply absolute origin-left transform left-2 duration-300 scale-[.9] -translate-y-10 text-jetBlack;
+  }
 }
