@@ -31,13 +31,13 @@ const Booking = () => {
 		<div className={styles.bookingSection} id="booking">
 			<div className={styles.formContainer}>
 				<div className={styles.formContainerBg}>
-					<div className="md:absolute left-8 mx-auto mt-8">
+					<div className="mx-auto mt-8 md:absolute left-8">
 						<SectionTitle className="text-transparent">
 							Make your reservation today
 						</SectionTitle>
 					</div>
 					<form
-						className="md:mt-4 gap-y-10 md:max-w-xl md:w-1/2 flex flex-col justify-center w-full h-full p-4 -mt-12"
+						className="flex flex-col justify-center w-full h-full p-4 -mt-12 md:mt-4 gap-y-10 md:max-w-xl md:w-1/2"
 						action=""
 					>
 						<CustomInput required type="text" name="name" id="name" placeholder="Name" />
@@ -54,7 +54,7 @@ const Booking = () => {
 							</option>
 							<optgroup label="Haircut">
 								{options.haircuts.map((haircut, index) => (
-									<option key={haircut.index} value={haircut}>
+									<option key={haircut,index} value={haircut}>
 										{haircut}
 									</option>
 								))}

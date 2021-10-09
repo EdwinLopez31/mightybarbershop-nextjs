@@ -6,11 +6,12 @@ const Layout = (props) => {
   const [showNav, setShowNav] = useState(false)
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, true)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const handleScroll = () => {
+    console.log(window.scrollY)
     if (window.scrollY >= 70) {
       setShowNav(true)
     } else {
